@@ -16,6 +16,7 @@ body {
   padding: 20px;
   background-color: #44475a;
   border-radius: 15px;
+  align-items: start;
 }
 
 form {
@@ -43,7 +44,6 @@ button {
   border: none;
   cursor: pointer;
   position: relative;
-  padding: 5px;
 }
 
 button:hover {
