@@ -12,7 +12,7 @@ body {
 
 .container {
   text-align: center;
-  color: pink;
+  color: black;
   padding: 20px;
   background-color: #44475a;
   border-radius: 15px;
@@ -38,7 +38,7 @@ input {
 
 button {
   background-color: #6272a4;
-  color: #f8f8f2;
+  color: black;
   padding: 10px;
   border: none;
   cursor: pointer;
