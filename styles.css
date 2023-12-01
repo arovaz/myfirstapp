@@ -43,6 +43,7 @@ button {
   border: none;
   cursor: pointer;
   position: relative;
+  padding: 5px;
 }
 
 button:hover {
