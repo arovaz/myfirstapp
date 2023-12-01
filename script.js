@@ -4,7 +4,15 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   // Adicione aqui a lógica de autenticação com o backend
   // Exemplo: Verifique se o e-mail e a senha são válidos
 
-  alert("Autenticação bem-sucedida!");
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Verificação de exemplo
+  if (email === "logistica@sete-sta.com.br" && password === "Log@2023") {
+    alert("Autenticação bem-sucedida!");
+  } else {
+    alert("Falha na autenticação. Verifique o e-mail e a senha.");
+  }
 });
 
 document.getElementById("forgotPassword").addEventListener("click", function () {
