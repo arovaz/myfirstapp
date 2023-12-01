@@ -12,6 +12,7 @@ body {
 
 .container {
   text-align: center;
+  color: pink;
   padding: 20px;
   background-color: #44475a;
   border-radius: 15px;
