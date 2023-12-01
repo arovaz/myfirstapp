@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Arthur Vaz</title>
+  <title>Login</title>
 </head>
+
 <body>
   <div class="container">
-    <form id="userForm">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
+    <form id="loginForm">
+      <h2>Login</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="phone">Telefone:</label>
-      <input type="tel" id="phone" name="phone" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
 
-      <button type="button" onclick="submitForm()">Enviar</button>
+      <button type="submit">Entrar</button>
     </form>
 
-    <div id="outputBox" class="hidden">
-      <h2>Informações fornecidas:</h2>
-      <p id="outputText"></p>
-    </div>
-  </div>
-  <div>
-    <a href="pagina2.html">Ir para a próximna página</a>
-  </div>
-  <div class="imagem">
-    <img src="./src/Carrinho.jpg" alt="">
+    <p id="forgotPassword">Esqueci minha senha</p>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
