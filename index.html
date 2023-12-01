@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Arthur Vaz</title>
 </head>
 <body>
-    <p>Olá mundo 2!</p>
-    
+  <div class="container">
+    <form id="userForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+
+    <div id="outputBox" class="hidden">
+      <h2>Informações fornecidas:</h2>
+      <p id="outputText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
