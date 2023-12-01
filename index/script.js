@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   // Verificação de exemplo
   if (email === "logistica@sete-sta.com.br" && password === "Log@2023") {
     alert("Autenticação bem-sucedida!");
-    window.location.href = "telainicial.html"; // Redireciona para a tela inicial
+    window.location.href = "inicial.html"; // Redireciona para a tela inicial
   } else {
     alert("Falha na autenticação. Verifique o e-mail e a senha.");
   }
