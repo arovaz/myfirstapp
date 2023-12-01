@@ -12,6 +12,8 @@ body {
 
 .container {
   text-align: center;
+  padding: 20px;
+  background-color: #44475a;
 }
 
 form {
