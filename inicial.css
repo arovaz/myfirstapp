@@ -38,3 +38,32 @@ main {
       font-size: 12px;
   }
 }
+/* Adicione estas regras ao seu arquivo styles.css */
+
+.menu {
+  width: 200px;
+  background-color: #44475a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item img {
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}

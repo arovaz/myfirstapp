@@ -12,11 +12,30 @@
             <h1>Seu Site</h1>
             <button id="logoffBtn">Logoff</button>
         </header>
+        <nav class="menu">
+            <div class="menu-item" onclick="showContent('Locacao')">
+                <img src="locacao-icon.png" alt="Locação" width="60" height="60">
+                <span>Locação</span>
+            </div>
+            <div class="menu-item" onclick="showContent('Manutencao')">
+                <img src="manutencao-icon.png" alt="Manutenção" width="60" height="60">
+                <span>Manutenção</span>
+            </div>
+            <div class="menu-item" onclick="showContent('Documentos')">
+                <img src="documentos-icon.png" alt="Documentos" width="60" height="60">
+                <span>Documentos</span>
+            </div>
+            <div class="menu-item" onclick="showContent('Compras')">
+                <img src="compras-icon.png" alt="Compras" width="60" height="60">
+                <span>Compras</span>
+            </div>
+        </nav>
         <main>
-            <p>Conteúdo do site vai aqui.</p>
+            <p id="content">Conteúdo do site vai aqui.</p>
         </main>
     </div>
 
     <script src="inicial.js"></script>
 </body>
 </html>
+
