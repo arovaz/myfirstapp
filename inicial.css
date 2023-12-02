@@ -12,6 +12,7 @@ body {
   padding: 20px;
   background-color: #6272a4;
   border-radius: 5px;
+  flex-direction: column;
 }
 
 header {
