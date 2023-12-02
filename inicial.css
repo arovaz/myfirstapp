@@ -1,46 +1,30 @@
+/* Adicione estas regras ao seu arquivo styles.css */
+
 body {
-  background-color: #282a36;
-  color: #f8f8f2;
-  font-family: 'Courier New', monospace;
   margin: 0;
   padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6272a4;
-  border-radius: 5px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header, #logoffBtn {
+  background-color: #282a36;
+  color: #f8f8f2;
+  padding: 10px;
+  text-align: center;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
+  flex-shrink: 0;
 }
 
-button {
-  background-color: #6272a4;
-  color: #f8f8f2;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 14px;
+#logoffBtn {
+  align-self: flex-end;
 }
-
-main {
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  button {
-      font-size: 12px;
-  }
-}
-/* Adicione estas regras ao seu arquivo styles.css */
 
 .menu {
   width: 200px;
@@ -48,6 +32,7 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .menu-item {
@@ -61,11 +46,8 @@ main {
   margin-right: 10px;
 }
 
-.container {
-  display: flex;
-}
-
 main {
   flex-grow: 1;
   padding: 20px;
+  text-align: center;
 }
