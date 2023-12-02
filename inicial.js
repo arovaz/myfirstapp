@@ -9,7 +9,7 @@ function showContent(contentType) {
     
     switch (contentType) {
         case 'Locação':
-        case 'Manutencao':
+        case 'Manutenção':
         case 'Documentos':
         case 'Compras':
             contentElement.innerHTML = `
