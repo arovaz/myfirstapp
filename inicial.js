@@ -8,8 +8,8 @@ function showContent(contentType) {
     const contentElement = document.getElementById('content');
     
     switch (contentType) {
-        case 'Locação':
-        case 'Manutenção':
+        case 'Locacao':
+        case 'Manutencao':
         case 'Documentos':
         case 'Compras':
             contentElement.innerHTML = `
