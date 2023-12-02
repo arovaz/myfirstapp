@@ -16,31 +16,6 @@ body {
   flex-direction: column;
 }
 
-.container1 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6272a4;
-  border-radius: 5px;
-  flex-direction: column;
-}
-
-.container2 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6272a4;
-  border-radius: 5px;
-  flex-direction: column;
-}
-.container3 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6272a4;
-  border-radius: 5px;
-  flex-direction: column;
-}
 header {
   display: flex;
   justify-content: space-between;
