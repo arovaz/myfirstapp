@@ -54,8 +54,8 @@ main {
 
 .submenu {
   position: absolute;
-  top: 30;
-  left: 30;
+  top: 10;
+  left: 10;
   background-color: #44475a;
   padding: 10px;
   display: none;
