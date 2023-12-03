@@ -48,6 +48,7 @@ header {
 
 main {
   flex-grow: 1;
+  top: 14%;
   padding: 20px;
   text-align: center;
 }
@@ -55,7 +56,7 @@ main {
 .submenu {
   position: fixed;
   top: 14%;
-  left: 21%;
+  left: 22%;
   transform: translate(-50%, -50%);
   background-color: #44475a;
   padding: 20px;
