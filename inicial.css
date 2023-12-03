@@ -48,7 +48,6 @@ header {
 
 main {
   flex-grow: 1;
-  top: 14%;
   padding: 20px;
   text-align: center;
 }

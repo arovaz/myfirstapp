@@ -12,6 +12,7 @@
             <h1>Central da Logística</h1>
         </header>
         <button id="logoffBtn">Sair</button>
+
         <nav class="menu">
             <div class="menu-item" onclick="showContent('Locação')">
                 <img src="locacao-icon.png" width="60" height="60">
@@ -36,10 +37,48 @@
         <main>
             <div class="submenu" id="submenu">
                 <a href="#">Novo Pedido</a>
+                /<a href="#" onclick="showMaintenanceForm()">Novo Pedido de Manutenção</a>
                 <a href="#">Status de Pedido</a>
                 <a href="#">Histórico de Pedido</a>
             </div>
-            <p id="content">Conteúdo do site vai aqui.</p>
+            //<p id="content">Conteúdo do site vai aqui.</p>
+
+            <div id="maintenanceForm" class="form" style="display:none;">
+                <h2>Novo Pedido de Manutenção</h2>
+                <form id="maintenanceForm">
+                    <label for="project">Projeto:</label>
+                    <input type="text" id="project" name="project" required><br>
+
+                    <label for="maintenanceType">Tipo de Manutenção:</label>
+                    <select id="maintenanceType" name="maintenanceType">
+                        <option value="revisao">Revisão Periódica</option>
+                        <option value="mecanica">Manutenção Mecânica/Elétrica</option>
+                        <option value="telemetria">Manutenção de Telemetria</option>
+                        <option value="reparo">Reparo de Avaria/Acidente</option>
+                    </select><br>
+
+                    <label for="plate">Placa:</label>
+                    <input type="text" id="plate" name="plate" required><br>
+
+                    <label for="requester">Solicitante:</label>
+                    <input type="text" id="requester" name="requester" required><br>
+
+                    <label for="driver">Condutor:</label>
+                    <input type="text" id="driver" name="driver" required><br>
+
+                    <label for="currentKm">Km Atual:</label>
+                    <input type="number" id="currentKm" name="currentKm" required><br>
+
+                    <label for="vehicleLocation">Local do Veículo:</label>
+                    <input type="text" id="vehicleLocation" name="vehicleLocation" required><br>
+
+                    <label for="maintenanceDate">Data para a Manutenção:</label>
+                    <input type="text" id="maintenanceDate" name="maintenanceDate" placeholder="dd/mm/yyyy" required><br>
+
+                    <button type="button" onclick="submitMaintenanceForm()">Enviar</button>
+                </form>
+            </div>
+
         </main>
     </div>
 
