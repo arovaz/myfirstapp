@@ -54,15 +54,16 @@ main {
 
 .submenu {
   //position: fixed;
-  top: 10;
-  left: 10;
+  top: 0;
+  left: 0;
   background-color: #44475a;
-  padding: 10px;
+  padding: 20px;
   display: none;
 }
 
 .submenu a {
   color: #f8f8f2;
+  font-size: large;
   text-decoration: none;
   
   margin-bottom: 10px;
