@@ -5,30 +5,24 @@
         document.getElementById('content').innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
     }
     function showContent(contentType) {
-        var content = document.getElementById('content');
-        var sideMenuList = document.getElementById('sideMenuList');
-    
-        // Atualizar o conteúdo principal
-        content.innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
-    
-        // Atualizar o menu lateral
-        sideMenuList.innerHTML = ""; // Limpar a lista antes de adicionar novos itens
-    
-        if (contentType === 'Locacao' || contentType === 'Manutencao' || contentType === 'Documentos' || contentType === 'Compras') {
-            var links = ['Novo pedido', 'Status de pedido', 'Histórico de pedido'];
-    
-            // Adicionar links à lista
-            links.forEach(function(link) {
-                var listItem = document.createElement('li');
-                listItem.textContent = link;
-                sideMenuList.appendChild(listItem);
-            });
-    
-            // Exibir o menu lateral
-            document.getElementById('sideMenu').style.display = 'block';
-        } else {
-            // Ocultar o menu lateral para outros conteúdos
-            document.getElementById('sideMenu').style.display = 'none';
+        const contentElement = document.getElementById('content');
+        
+        switch (contentType) {
+            case 'Locação':
+            case 'Manutenção':
+            case 'Documentos':
+            case 'Compras':
+                contentElement.innerHTML = `
+                    <h2>${contentType}</h2>
+                    <ol>
+                        <li onclick="showSubContent('Novo pedido')">Novo pedido</li>
+                        <li onclick="showSubContent('Status de pedido')">Status de pedido</li>
+                        <li onclick="showSubContent('Histórico de pedido')">Histórico de pedido</li>
+                    </ol>`;
+                break;
+            default:
+                contentElement.innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
+                break;
         }
     }
     

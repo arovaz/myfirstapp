@@ -37,7 +37,7 @@ header {
 
 .menu-item {
   margin-bottom: 10px;
-  cursor: pointer;
+  
   display: flex;
   align-items: center;
 }
