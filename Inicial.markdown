@@ -1,4 +1,0 @@
-- MAYFIRSTAPP
-  - src
-    - Carrinho.jpg
-  - inicial.html

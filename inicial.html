@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>Central de pedidos da Logística</h1>
+            <h1>Seu Site</h1>
         </header>
         <button id="logoffBtn">Sair</button>
         <nav class="menu">
@@ -22,14 +22,17 @@
                 <span>Manutenção</span>
             </div>
             <div class="menu-item" onclick="showContent('Documentos')">
-                <img src="Docs.jpg" alt="Documentos" width="60" height="60">
+                <img src="documentos-icon.png" alt="Documentos" width="60" height="60">
                 <span>Documentos</span>
             </div>
             <div class="menu-item" onclick="showContent('Compras')">
-                <img src="Carrinho.jpg" alt="Compras" width="60" height="60">
+                <img src="compras-icon.png" alt="Compras" width="60" height="60">
                 <span>Compras</span>
             </div>
         </nav>
+        <aside id="sideMenu">
+            <ul id="sideMenuList"></ul>
+        </aside>
         <main>
             <p id="content">Conteúdo do site vai aqui.</p>
         </main>
