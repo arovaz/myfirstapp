@@ -54,8 +54,8 @@ main {
 
 .submenu {
   position: fixed;
-  top: 20%;
-  left: 15%;
+  top: 15%;
+  left: 25%;
   transform: translate(-50%, -50%);
   background-color: #44475a;
   padding: 20px;
