@@ -16,6 +16,7 @@ header, #logoffBtn {
   color: #f8f8f2;
   padding: 10px;
   text-align: center;
+  flex-direction: row;
 }
 
 header {

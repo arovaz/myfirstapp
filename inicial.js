@@ -9,11 +9,11 @@
         const submenuElement = document.getElementById('submenu');
         switch (contentType) {
             case 'Novo':
-                contentElement.innerText = 'Vamos colocar os camos de novos pedidos aqui.';
+                contentElement.innerText = 'Conteúdo relacionado a Opção 1 vai aqui.';
                 hideSubmenu();
                 break;
             case 'Consulta':
-                contentElement.innerText = 'Vamos listar as demandas aqui.';
+                contentElement.innerText = 'Conteúdo relacionado a Opção 2 vai aqui.';
                 hideSubmenu();
                 break;
             // Adicione outros casos conforme necessário
@@ -24,15 +24,15 @@
         }
     }
     
-//    function showSubmenu() {
-//        const submenuElement = document.getElementById('submenu');
-//        submenuElement.style.display = 'block';
-//    }
+    function showSubmenu() {
+        const submenuElement = document.getElementById('submenu');
+        submenuElement.style.display = 'block';
+    }
     
-//    function hideSubmenu() {
-//        const submenuElement = document.getElementById('submenu');
-//        submenuElement.style.display = 'none';
-//    }
+    function hideSubmenu() {
+        const submenuElement = document.getElementById('submenu');
+        submenuElement.style.display = 'none';
+    }
 
 
     //Parte da coleta de dados para Manutenção
