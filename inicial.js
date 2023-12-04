@@ -8,17 +8,25 @@
         const contentElement = document.getElementById('content');
         const submenuElement = document.getElementById('submenu');
         switch (contentType) {
-            case 'Novo':
-                contentElement.innerText = 'Conteúdo relacionado a Opção 1 vai aqui.';
-                hideSubmenu();
-                break;
-            case 'Consulta':
-                contentElement.innerText = 'Conteúdo relacionado a Opção 2 vai aqui.';
-                hideSubmenu();
-                break;
-            // Adicione outros casos conforme necessário
+            case 'Locação':
+                contentElement.innerText = 'Conteúdo relacionado a Locação vai aqui.';
+            showSubmenu();
+            break;
+            case 'Manutenção':
+                contentElement.innerText = 'Conteúdo relacionado a Manutenção vai aqui.';
+            showSubmenu();
+            break;
+            case 'Documentos':
+                contentElement.innerText = 'Conteúdo relacionado a Documentos vai aqui.';
+            showSubmenu();
+            break;
+            case 'Compras':
+                contentElement.innerText = 'Conteúdo relacionado a Compras vai aqui.';
+            showSubmenu();
+            break;
+            
             default:
-                contentElement.innerText = 'Conteúdo do site vai aqui.';
+                contentElement.innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
                 hideSubmenu();
                 break;
         }
