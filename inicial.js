@@ -8,39 +8,31 @@
         const contentElement = document.getElementById('content');
         const submenuElement = document.getElementById('submenu');
         switch (contentType) {
-            case 'Locação':
-                contentElement.innerText = 'Conteúdo relacionado a Locação vai aqui.';
-            showSubmenu();
-            break;
-            case 'Manutenção':
-                contentElement.innerText = 'Conteúdo relacionado a Manutenção vai aqui.';
-            showSubmenu();
-            break;
-            case 'Documentos':
-                contentElement.innerText = 'Conteúdo relacionado a Documentos vai aqui.';
-            showSubmenu();
-            break;
-            case 'Compras':
-                contentElement.innerText = 'Conteúdo relacionado a Compras vai aqui.';
-            showSubmenu();
-            break;
-            
+            case 'Novo':
+                contentElement.innerText = 'Vamos colocar os camos de novos pedidos aqui.';
+                hideSubmenu();
+                break;
+            case 'Consulta':
+                contentElement.innerText = 'Vamos listar as demandas aqui.';
+                hideSubmenu();
+                break;
+            // Adicione outros casos conforme necessário
             default:
-                contentElement.innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
+                contentElement.innerText = 'Conteúdo do site vai aqui.';
                 hideSubmenu();
                 break;
         }
     }
     
-    function showSubmenu() {
-        const submenuElement = document.getElementById('submenu');
-        submenuElement.style.display = 'block';
-    }
+//    function showSubmenu() {
+//        const submenuElement = document.getElementById('submenu');
+//        submenuElement.style.display = 'block';
+//    }
     
-    function hideSubmenu() {
-        const submenuElement = document.getElementById('submenu');
-        submenuElement.style.display = 'none';
-    }
+//    function hideSubmenu() {
+//        const submenuElement = document.getElementById('submenu');
+//        submenuElement.style.display = 'none';
+//    }
 
 
     //Parte da coleta de dados para Manutenção
