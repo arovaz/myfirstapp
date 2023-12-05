@@ -3,26 +3,21 @@
     });
     function showContent(contentType) {
         document.getElementById('content').innerText = `Conteúdo relacionado a ${contentType} vai aqui.`;
-    }
-    function showContent(contentType) {
         const contentElement = document.getElementById('content');
         const submenuElement = document.getElementById('submenu');
         switch (contentType) {
-            case 'Locação':
+            case 'NewLocação':
                 contentElement.innerText = 'Conteúdo relacionado a Locação vai aqui.';
-            showSubmenu();
             break;
-            case 'Manutenção':
-                contentElement.innerText = 'Conteúdo relacionado a Manutenção vai aqui.';
-            showSubmenu();
+            case 'NewManutenção':
+                contentElement.innerText = 'Conteúdo relacionado a Nova Manutenção vai aqui.';
+                showmanutençãoform();
             break;
-            case 'Documentos':
+            case 'NewDocs':
                 contentElement.innerText = 'Conteúdo relacionado a Documentos vai aqui.';
-            showSubmenu();
             break;
-            case 'Compras':
+            case 'NewCompra':
                 contentElement.innerText = 'Conteúdo relacionado a Compras vai aqui.';
-            showSubmenu();
             break;
             
             default:
@@ -32,25 +27,15 @@
         }
     }
     
-    function showSubmenu() {
-        const submenuElement = document.getElementById('submenu');
-        submenuElement.style.display = 'block';
-    }
-    
-    function hideSubmenu() {
-        const submenuElement = document.getElementById('submenu');
-        submenuElement.style.display = 'none';
-    }
-
-
+   
     //Parte da coleta de dados para Manutenção
-    function showMaintenanceForm() {
+    function showmanutençãoform() {
         document.getElementById('content').style.display = 'none';
-        document.getElementById('maintenanceForm').style.display = 'block';
+        document.getElementById('manutençãoform').style.display = 'block';
         document.getElementById('submenu').style.display = 'none';
     }
     
-    function submitMaintenanceForm() {
+    function submitmanutençãoform() {
         // Aqui você pode coletar os valores do formulário e fazer o que for necessário
         const project = document.getElementById('project').value;
         const maintenanceType = document.getElementById('maintenanceType').value;
@@ -75,7 +60,7 @@
     
         // Voltar ao conteúdo principal
         document.getElementById('content').style.display = 'block';
-        document.getElementById('maintenanceForm').style.display = 'none';
+        document.getElementById('manutençãoform').style.display = 'none';
         document.getElementById('submenu').style.display = 'block';
     }
     

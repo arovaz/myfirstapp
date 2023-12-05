@@ -7,48 +7,69 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="inicial.css">
 </head>
+<header>
+    <div class="Cabeçalho">
+        <h1>Central da Logística</h1>
+    </div>
+</header>
 <body>
     <div class="wrapper">
-        <header>
-            <h1>Central da Logística</h1>
-        </header>
-        <button id="logoffBtn">Sair</button>
-
         <nav class="menu">
-            <div class="menu-item" onclick="showContent('Locação')">
+            <div class="menu-item">
                 <img src="./src/Caminhonete.png" width="60" height="60">
-                <span>Locação</span>
+                <div class="dropdown">
+                    <label for="Locação">Locação</label>
+                    <select name="Locação" onchange="showContent(this.value)" id="Locação">
+                            <option value="NewLocação">Novo</option>
+                            <option value="ConsultLocação">Consultar</option>
+                        </select><br>
+                </div>
             </div>
-            <div class="menu-item" onclick="showContent('Manutenção')">
+            <div class="menu-item">
                 <img src="./src/Manutenção.png" width="60" height="60">
-                <span>Manutenção</span>
+                <div class="dropdown">
+                    <label for="Manutenção">Manutenção</label>
+                    <select name="Manutenção" onchange="showContent(this.value)" id="Manutenção">
+                        <option value="NewManutenção">Selecione</option>
+                        <option value="NewManutenção">Novo</option>
+                        <option value="ConsultManutenção">Consular</option>
+                    </select><br>
+                </div>
             </div>
             <div class="menu-item" onclick="showContent('Documentos')">
                 <img src="./src/Docs.png" width="60" height="60">
-                <span>Documentos</span>
+                <div class="dropdown">
+                    <label for="Documentos">Documentos</label>
+                    <select name="Documentos" onchange="showContent(this.value)" id="Documentos">
+                        <option value="NewDocs">Novo</option>
+                        <option value="ConsultDocs">Consular</option>
+                    </select><br>
+                </div>
             </div>
             <div class="menu-item" onclick="showContent('Compras')">
                 <img src="./src/Carrinho.jpg" width="60" height="60">
-                <span>Compras</span>
+                <div class="dropdown">
+                    <label for="Compras">Compras</label>
+                    <select name="Compras" onchange="showContent(this.value)" id="comprasDropdown">
+                        <option value="NewCompra">Novo</option>
+                        <option value="ConsultCompra">Consular</option>
+                    </select><br>
+                </div>
             </div>
         </nav>
         <aside id="sideMenu">
             <ul id="sideMenuList"></ul>
-            <select id="trocaonome" name="trocaonome">
-                <option value="revisao"><a href="#" onclick="showMaintenanceForm()">Novo</a></option>
-                <option value="mecanica"><a href="#" onclick="showMaintenanceForm()">Consulta</a></option>
-            </select><br>
         </aside>
         <main>
-
+            
             <p id="content">Conteúdo do site vai aqui.</p>
- 
-            <div id="maintenanceForm" class="form" style="display:none;">
+            
+            <div id="manutençãoform" class="form" style="display:none;">
                 <h2>Novo</h2>
-                <form id="maintenanceForm">
+                <form id="manutençãoform">
                     <label for="project">Projeto:</label>
                     <input type="text" id="project" name="project" required><br>
-
+                    
                     <label for="maintenanceType">Tipo de Manutenção:</label>
                     <select id="maintenanceType" name="maintenanceType">
                         <option value="revisao">Revisão Periódica</option>
@@ -59,29 +80,36 @@
 
                     <label for="plate">Placa:</label>
                     <input type="text" id="plate" name="plate" required><br>
-
+                    
                     <label for="requester">Solicitante:</label>
                     <input type="text" id="requester" name="requester" required><br>
-
+                    
                     <label for="driver">Condutor:</label>
                     <input type="text" id="driver" name="driver" required><br>
-
+                    
                     <label for="currentKm">Km Atual:</label>
                     <input type="number" id="currentKm" name="currentKm" required><br>
-
+                    
                     <label for="vehicleLocation">Local do Veículo:</label>
                     <input type="text" id="vehicleLocation" name="vehicleLocation" required><br>
-
+                    
                     <label for="maintenanceDate">Data para a Manutenção:</label>
                     <input type="text" id="maintenanceDate" name="maintenanceDate" placeholder="dd/mm/yyyy" required><br>
-
-                    <button type="button" onclick="submitMaintenanceForm()">Enviar</button>
+                    
+                    <button type="button" onclick="submitmanutençãoform()">Enviar</button>
                 </form>
             </div>
-
+            
         </main>
     </div>
+    
+    <footer>
+        <div class="Botão">
+            <a href="./index.html" id="logoffBtn">Sair</a>
+        </div>
+    </footer>
 
-    <script src="inicial.js"></script>
+    <script src="inicial.js">
+    </script>
 </body>
 </html>

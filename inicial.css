@@ -7,13 +7,13 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
+  height: 92vh;
 }
 
-header, #logoffBtn {
+header {
   background-color: #282a36;
-  color: #f8f8f2;
+  color: black;
   padding: 10px;
   text-align: center;
 }
@@ -22,8 +22,16 @@ header {
   flex-shrink: 0;
 }
 
-#logoffBtn {
-  align-self: flex-end;
+.Botão {
+  font-size: xx-large;
+  align-items: center;
+  background-color: #282a36;
+  font: bold;
+}
+
+.logoffBtn {
+color: white;
+font: bold;
 }
 
 .menu {
@@ -50,25 +58,6 @@ main {
   flex-grow: 1;
   padding: 20px;
   text-align: center;
-}
-
-.submenu {
-  position: fixed;
-  top: 14%;
-  left: 22%;
-  transform: translate(-50%, -50%);
-  background-color: #44475a;
-  padding: 20px;
-  display: none;
-}
-
-.submenu a {
-  color: #f8f8f2;
-  font-size: large;
-  text-decoration: none;
-  display: block;
-  padding: 20px;
-  margin-bottom: 10px;
 }
 
 .form {
@@ -114,4 +103,7 @@ main {
 
 .form button:hover {
   background-color: #8be9fd;
+}
+.dropdown {
+  background-color: #44475a;
 }
