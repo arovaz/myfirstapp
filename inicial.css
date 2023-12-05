@@ -8,7 +8,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 92vh;
+  height: 90vh;
 }
 
 header {
@@ -27,6 +27,8 @@ header {
   align-items: center;
   background-color: #282a36;
   font: bold;
+  color: white;
+  padding-left: 10px;
 }
 
 .logoffBtn {
@@ -71,7 +73,8 @@ main {
 }
 
 .form h2 {
-  color: #bd93f9;
+  color: white;
+  font-size: xx-large;
 }
 
 .form label {
